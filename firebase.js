@@ -1,17 +1,15 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
-
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
-
-  // TODO: Add SDKs for Firebase products that you want to use
-
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
 
-  // Your web app's Firebase configuration
+// TODO: Add SDKs for Firebase products that you want to use
 
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-  const firebaseConfig = {
+
+// Your web app's Firebase configuration
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const firebaseConfig = {
 
     apiKey: "AIzaSyBv600cS1QGuKdko1dmmyrdIoaQ0OgNeFk",
 
@@ -27,12 +25,11 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase
 
     measurementId: "G-G20TDLSNLT"
 
-  };
+};
 
 
   // Initialize Firebase
 
-  const app = initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-
-  const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
+firebase.getAnalytics();
+let db = firebase.firestore();
